@@ -77,7 +77,7 @@ class HomeProvider extends ChangeNotifier {
     _selectedBrands.clear();
   }
 
-  Future<void> currentBookingApi() async {
+  Future<void> getProductDataApi() async {
     changeLoading(true);
 
     final response = await http.get(Uri.parse(ApiConstant.productList));

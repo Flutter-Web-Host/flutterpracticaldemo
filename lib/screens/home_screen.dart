@@ -20,7 +20,7 @@ class _HomeScreenState extends ConsumerState<HomeScreen> {
   @override
   void initState() {
     WidgetsBinding.instance.addPostFrameCallback((timeStamp) {
-      ref.read(homeProvider).currentBookingApi();
+      ref.read(homeProvider).getProductDataApi();
     });
     super.initState();
   }
