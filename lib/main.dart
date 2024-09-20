@@ -5,7 +5,7 @@ import 'package:provider/provider.dart';
 
 void main() {
   runApp(ChangeNotifierProvider(
-      create: (BuildContext context) => HomeProvider(), child: MyApp()));
+      create: (BuildContext context) => HomeProvider(), child: const MyApp()));
 }
 
 class MyApp extends StatelessWidget {
@@ -21,7 +21,7 @@ class MyApp extends StatelessWidget {
         colorScheme: ColorScheme.fromSeed(seedColor: Colors.deepPurple),
         useMaterial3: true,
       ),
-      home:  HomeScreen(),
+      home: const HomeScreen(),
     );
   }
 }
